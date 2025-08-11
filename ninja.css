@@ -1,0 +1,20 @@
+body {
+  background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden;  <-- BUNU KALDIRDIK */
+}
+
+#ninja {
+  position: fixed;
+  width: 100px;
+  top: 50px;
+  left: 50px;
+  transition: transform 0.05s;
+  z-index: 9999; /* hep üstte kalsın */
+}
