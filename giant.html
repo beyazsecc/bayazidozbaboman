@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="twitter:image" content="https://www.penguensogutma.com/images/urunler/Manifold-Seti-Hortumlu-R1234YF-resim-5832.webp">
+  <title>TNT GNG GANG</title>
+  <link rel="website icon" href="apple-logo-transparent.png">
+  
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      text-align: center; 
+      margin-top: 40px;
+      font-size: 2rem;
+    }
+
+    iframe { 
+      margin: 20px auto;
+      border: none;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .video-button {
+      background-color: rgb(155, 122, 233);
+      color: aliceblue;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-button:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    h3 {
+      margin-top: 40px;
+      font-size: 2rem;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    table {
+      margin-top: 40px;
+    }
+
+    #ninja {
+      position: fixed;
+      width: 100px;
+      top: 50px;
+      left: 50px;
+      transition: transform 0.05s;
+      z-index: 9999;
+    }
+
+    img, video {
+      display: block;
+      margin: 20px auto;
+      max-width: 900%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>ÖLÜM ALLAHIN EMRİ TURİZM!!!</h2>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/WQ3iJGypbeA?list=RD4-V6KvbsvcA" title="YouTube video player" allowfullscreen></iframe>
+
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/HMW_zr1D418?list=RDHMW_zr1D418" title="OHH MY HANDS ARE SHAKİNG!!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <form onsubmit="redirectToLegendarySite(); return false;">
+    <label for="isim">ad:</label>
+    <input type="text" name="isim" id="isim" placeholder="yusuf"><br><br>  
+
+    <label for="soyad">soyad:</label>
+    <input type="text" name="soyad" id="soyad" placeholder="fezz"><br><br>
+
+    <label for="sifre">şifre:</label>
+    <input type="password" name="sifre" id="sifre" placeholder="********"><br><br>
+
+    <input type="submit" value="Giriş">
+  </form>
+
+  <button onclick="tıkla()" class="video-button">HTML VİDEO</button>
+  <p id="yazı">butona bas!!!</p>
+
+  <script>
+    function tıkla() {
+      document.getElementById("yazı").innerHTML = "bi yarışta 3.yü geçersen kaçıncı olursun";
+    }
+
+    function redirectToLegendarySite() {
+      window.location.href = "legendary.html"; // bu dosya dizinde olmalı
+    }
+  </script>
+
+  <table bgcolor="black"> 
+    <tr bgcolor="grey">
+      <th>pazartesi</th>
+      <th>salı</th>
+      <th>çarşamba</th>
+      <th>perşembe</th>
+      <th>cuma</th>
+    </tr>
+
+    <tr align="center" bgcolor="lightgrey">
+      <td>kuru paspas</td>
+      <td>bulaşık</td>
+      <td>ıslak paspas</td>
+      <td>kuru paspas</td>
+      <td>bulaşık</td>
+    </tr>
+  </table>
+
+  <a href="https://www.youtube.com/watch?v=GzpLpNBZwoI&list=RDGzpLpNBZwoI&start_radio=1" target="_blank">
+    <p style="color: rgb(192, 173, 214); text-align: center;"><i>N O S T A L G İ C</i></p>
+  </a>
+
+  <h3>dört koldan taciz</h3>
+
+  <img src="Four_arms_os_render.jpg" width="200px">
+  <img src="mercedes-benz-cla-coupe-c118-modeloverview-696x392-02-2023.avif" width="500px">
+  <img src="insanazor.jpg" width="500px"> 
+  <video src="Download.mp4" controls></video>
+  <img src="saniye-bey-saniye.gif" width="1000px"> 
+
+  <img id="ninja" src="beyazıd.jpg" height="100px" width="500px" title="Ninja">
+
+  <script>
+    const ninja = document.getElementById('ninja');
+    let x = 50;
+    let y = 50;
+    const speed = 15;
+
+    document.addEventListener('keydown', (e) => {
+      const key = e.key.toLowerCase();
+
+      switch (key) {
+        case 'w':
+          y -= speed;
+          break;
+        case 'a':
+          x -= speed;
+          ninja.style.transform = 'scaleX(-1)';
+          break;
+        case 's':
+          y += speed;
+          break;
+        case 'd':
+          x += speed;
+          ninja.style.transform = 'scaleX(1)';
+          break;
+      }
+
+      const maxX = window.innerWidth - ninja.clientWidth;
+      const maxY = window.innerHeight - ninja.clientHeight;
+      x = Math.max(0, Math.min(x, maxX));
+      y = Math.max(0, Math.min(y, maxY));
+
+      ninja.style.left = `${x}px`;
+      ninja.style.top = `${y}px`;
+    });
+  </script>
+
+</body>
+</html>
